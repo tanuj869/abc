@@ -9,3 +9,8 @@ streamlit
 statsmodels
 scipy
 plotly
+langchain
+langchain-openai
+langgraph
+rank-bm25
+pydantic
