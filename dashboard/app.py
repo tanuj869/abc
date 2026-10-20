@@ -1032,11 +1032,14 @@ with t8:
     if run_copilot and query_text.strip():
         with st.spinner("🤖 Orchestrating LangGraph: Guardrail ➔ Intent Router ➔ Tool Execution ➔ BM25 RAG ➔ Evidence Synthesis..."):
             try:
+                from src.ai_layer.workflow_graph import run_policy_assistant_with_trace
                 trace = run_policy_assistant_with_trace(query_text.strip())
+                # Replace or insert at front
                 st.session_state["copilot_history"].insert(0, {
                     "query": query_text.strip(),
                     "trace": trace
                 })
+                st.rerun()
             except Exception as e:
                 st.error(f"Execution Error: {e}")
 
