@@ -21,7 +21,7 @@ import numpy as np
 
 # Add src to path
 sys.path.append(os.path.abspath("."))
-from src.state_mapping import normalize_state, CANONICAL_STATES, get_state_region
+from src.state_mapping import normalize_state, CANONICAL_STATES, get_state_region, get_state_coords
 from src.population import STATE_POPULATION_2024_LAKHS
 
 RAW = "data/raw"
@@ -240,8 +240,11 @@ def rebuild():
 
     df_model = pd.merge(df_aug, df_cov, on="state", how="inner")
     
-    # Regional classification
+    # Regional and geographical classification
     df_model["region"] = df_model["state"].apply(get_state_region)
+    coords = df_model["state"].apply(get_state_coords)
+    df_model["latitude"] = coords.apply(lambda c: c[0])
+    df_model["longitude"] = coords.apply(lambda c: c[1])
 
     # Per capita metrics
     df_model["installations_per_lakh_pop"] = df_model["installations_aug2026"] / df_model["pop_2024_lakhs"]
