@@ -133,16 +133,20 @@ def get_adoption_forecast(scope: Optional[str] = "national") -> Dict[str, Any]:
         }
 
 @tool
-def run_scenario_simulation(tariff_shock_pct: float = 10.0, target_high_potential: bool = True) -> Dict[str, Any]:
-    """Execute econometric counterfactual simulation modeling adoption lift under electricity tariff shocks and sunbelt targeting."""
+def run_scenario_simulation(tariff_shock_pct: float = 0.0, subsidy_change_pct: float = 0.0, target_high_potential: bool = True) -> Dict[str, Any]:
+    """Execute econometric counterfactual simulation modeling adoption lift or contraction under electricity tariff shocks, subsidy cuts/increases, and sunbelt targeting."""
     model_df, _, _ = _load_data()
+    
+    # Empirical elasticities derived from cross-sectional econometric modeling
     tariff_lift = (tariff_shock_pct / 100.0) * 1.6
+    subsidy_lift = (subsidy_change_pct / 100.0) * 0.45
     
     sim_df = model_df.copy()
     is_target = (sim_df["irradiance_annual_kwh_m2_day"] > 5.2) & (sim_df["target_conversion_ratio"] < 0.65)
-    target_lift = np.where(is_target & target_high_potential, 0.08, 0.0)
+    target_lift = np.where(is_target & target_high_potential & (tariff_shock_pct > 0), 0.08, 0.0)
     
-    sim_df["simulated_conv"] = (sim_df["target_conversion_ratio"] + tariff_lift + target_lift).clip(upper=0.98)
+    total_delta = tariff_lift + subsidy_lift + target_lift
+    sim_df["simulated_conv"] = (sim_df["target_conversion_ratio"] + total_delta).clip(lower=0.05, upper=0.98)
     sim_df["incremental_inst"] = (
         (sim_df["simulated_conv"] - sim_df["target_conversion_ratio"]) * sim_df["applications_aug2026"]
     ).fillna(0).astype(int)
@@ -150,21 +154,31 @@ def run_scenario_simulation(tariff_shock_pct: float = 10.0, target_high_potentia
     tot_inc = int(sim_df["incremental_inst"].sum())
     inc_mw = round(tot_inc * 3.3 / 1000, 1)
     
-    top_beneficiaries = sim_df.sort_values(by="incremental_inst", ascending=False)[["state", "incremental_inst", "simulated_conv"]].head(5)
+    # Payback period calculation
+    base_payback = 4.2
+    est_payback = round(base_payback * (1.0 - (subsidy_change_pct / 100.0) * 0.7) / (1.0 + (tariff_shock_pct / 100.0) * 0.6), 1)
     
+    if tot_inc >= 0:
+        top_states = sim_df.sort_values(by="incremental_inst", ascending=False)[["state", "incremental_inst", "simulated_conv"]].head(5)
+    else:
+        top_states = sim_df.sort_values(by="incremental_inst", ascending=True)[["state", "incremental_inst", "simulated_conv"]].head(5)
+        
     return {
         "inputs": {
-            "tariff_shock_applied": f"+{tariff_shock_pct:.1f}pp",
+            "tariff_shock_applied": f"{tariff_shock_pct:+.1f}pp",
+            "subsidy_change_applied": f"{subsidy_change_pct:+.1f}%",
             "high_potential_targeting": target_high_potential
         },
         "national_impact": {
             "incremental_installations": tot_inc,
             "incremental_capacity_mw": inc_mw,
-            "estimated_annual_clean_power_gwh": round((inc_mw * 1000 * 5.0 * 365 * 0.75) / 1e6, 1)
+            "estimated_annual_clean_power_gwh": round((inc_mw * 1000 * 5.0 * 365 * 0.75) / 1e6, 1),
+            "estimated_payback_years": est_payback,
+            "baseline_payback_years": base_payback
         },
-        "top_beneficiary_states": [
+        "top_affected_states": [
             {"state": r["state"], "incremental_units": int(r["incremental_inst"]), "new_conversion_ratio": f"{r['simulated_conv']*100:.1f}%"}
-            for _, r in top_beneficiaries.iterrows()
+            for _, r in top_states.iterrows()
         ]
     }
 

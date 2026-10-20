@@ -976,6 +976,13 @@ with t8:
         
     st.markdown("<br>", unsafe_allow_html=True)
     
+    with st.expander("⚙️ Copilot Engine & Custom API Key Settings (Optional)", expanded=False):
+        st.caption("SuryaIQ includes a high-precision offline analytical engine. To optionally connect live GPT-4o-mini generation, enter an active OpenAI key below:")
+        cfg_key = st.text_input("OpenAI API Key:", type="password", placeholder="sk-proj-...", key="user_openai_key")
+        if cfg_key and len(cfg_key.strip()) > 10:
+            os.environ["OPENAI_API_KEY"] = cfg_key.strip()
+            st.success("Custom API key registered for current session.")
+
     # Initialize Copilot Session State
     if "copilot_history" not in st.session_state:
         st.session_state["copilot_history"] = []
