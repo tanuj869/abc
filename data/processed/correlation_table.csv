@@ -1,0 +1,17 @@
+feature,correlation_r,n
+irradiance_annual_kwh_m2_day,0.5623,28
+tariff_growth_pct,0.4687,34
+installations_per_lakh_pop,0.3917,35
+applications_per_lakh_pop,0.236,35
+mnre_re_capacity_2025_mw,0.1261,33
+solar_potential_3pct_wasteland_gw,0.1037,31
+mnre_re_capacity_2018_mw,0.1028,33
+installations_aug2026,0.0832,35
+solar_potential_6.69pct_wasteland_gw,0.0689,34
+households_aug2026,0.0665,35
+applications_aug2026,-0.0083,35
+tariff_domestic4kw_2025_paise_per_kwh,-0.0525,34
+mnre_nonre_capacity_2025_mw,-0.0883,33
+mnre_nonre_capacity_2018_mw,-0.1134,33
+tariff_domestic4kw_2024_paise_per_kwh,-0.1254,34
+pop_2024_lakhs,-0.1498,35

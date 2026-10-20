@@ -1,0 +1,84 @@
+state,discom_name,applications,installations,households_covered,capacity_mw,subsidy_released_lakhs,conversion_ratio,region
+Ladakh,Ladakh Power Development Department,2824.0,2210.0,2210.0,7.28,1662.6,0.7825779036827195,North
+Jammu and Kashmir,Jammu & Kashmir Energy Development Agency (JAKEDA),4.0,2.0,2.0,0.01,0.0,0.5,North
+Jammu and Kashmir,Jammu Power Distribution Company Ltd (JPDCL),27776.0,15969.0,15973.0,56.18,12144.97,0.5749207949308756,North
+Jammu and Kashmir,Kashmir Power Distribution Company Ltd (KPDCL),54379.0,25813.0,25813.0,93.46,19646.33,0.47468691958292725,North
+Himachal Pradesh,HPSEB Limited,17650.0,12812.0,12838.0,43.89,9621.05,0.7258923512747876,North
+Punjab,Punjab State Power Corporation Ltd.,26674.0,18521.0,20470.0,83.47,11975.31,0.6943465546974582,North
+Chandigarh,Chandigarh Power Distribution Limited (CPDL),1638.0,1425.0,1425.0,5.93,861.0,0.86996336996337,North
+Uttarakhand,Uttarakhand Power Corporation Ltd,141345.0,102610.0,102903.0,369.17,80891.57,0.7259542254766705,North
+Haryana,Dakshin Haryana Bijli Vitran Nigam Limited,95110.0,58231.0,59303.0,200.09,36574.01,0.6122489748712018,North
+Haryana,Uttar Haryana Bijli Vitran Nigam Limited,101699.0,69958.0,77956.0,225.96,44966.18,0.6878927029764305,North
+NCT of Delhi,BSES Rajdhani Power Limited,16688.0,4856.0,8768.0,23.76,3674.59,0.2909875359539789,North
+NCT of Delhi,BSES Yamuna Power Limited,21390.0,1113.0,2108.0,5.05,793.63,0.05203366058906031,North
+NCT of Delhi,Tata Power Delhi Distribution Limited,30259.0,5796.0,6053.0,23.04,3438.47,0.19154631679830794,North
+Rajasthan,Ajmer Vidyut Vitran Nigam Ltd.,149579.0,96649.0,98654.0,358.97,65424.59,0.6461401667346353,North
+Rajasthan,Bharatpur Elecricity Services Limited,3357.0,2153.0,2153.0,8.41,1351.82,0.6413464402740542,North
+Rajasthan,Bikaner Electricity Supply Limited,13542.0,8970.0,8970.0,36.73,5983.0,0.6623836951705804,North
+Rajasthan,Jaipur Vidyut Vitran Nigam Ltd.,143052.0,94178.0,99368.0,394.3,61524.12,0.6583480133098454,North
+Rajasthan,Jodhpur Vidyut Vitran Nigam Ltd.,131520.0,84936.0,87752.0,314.49,57551.43,0.6458029197080292,North
+Rajasthan,Kota Elecricity Distribution Limited,13588.0,10326.0,10326.0,44.64,6502.94,0.7599352369738004,North
+Rajasthan,TP Ajmer Distribution Ltd.,6024.0,4150.0,4224.0,15.56,2833.02,0.6889110225763613,North
+Uttar Pradesh,Dakshinanchal Vidyut Vitran Nigam Ltd.,177276.0,117622.0,118111.0,387.86,76631.84,0.6634964687831404,North
+Uttar Pradesh,Kanpur Electric Supply Company Ltd.,56880.0,43340.0,43372.0,151.16,28718.96,0.7619549929676512,North
+Uttar Pradesh,Madhyanchal Vidyut Vitran Nigam Ltd,452884.0,310706.0,314990.0,1050.87,209826.97,0.6860608897642664,North
+Uttar Pradesh,Noida Power Company Limited,2153.0,1560.0,3078.0,7.82,1198.64,0.7245703669298653,North
+Uttar Pradesh,Pashchimanchal Vidyut Vitran Nigam Ltd.,185657.0,106791.0,107601.0,359.2,68773.51,0.5752058904323565,North
+Uttar Pradesh,Poorvanchal Vidyut Vitran Nigam Ltd.,288886.0,171328.0,171845.0,568.34,113022.06,0.5930643921823834,North
+Uttar Pradesh,Torrent Power Limited,31318.0,23159.0,23222.0,79.97,13613.55,0.7394788939268152,North
+Gujarat,Dakshin Gujarat Vij Co.Ltd (DGVCL),228615.0,138553.0,205134.0,539.34,102567.43,0.606053845985609,West
+Gujarat,Madhya Gujarat VIJ Company Ltd.,186314.0,126654.0,190864.0,497.65,91975.33,0.6797878849683867,West
+Gujarat,Paschim Gujarat Vij Co. Limited,402904.0,304061.0,355294.0,1086.29,221401.07,0.754673569882652,West
+Gujarat,Torrent Power Limited - Ahmedabad,80480.0,64338.0,151942.0,275.36,48557.64,0.7994284294234593,West
+Gujarat,Torrent Power Limited - Surat,13549.0,11753.0,18206.0,46.11,8655.99,0.8674440918148941,West
+Gujarat,Uttar Gujarat Vij Company Limited,281839.0,166174.0,225730.0,596.34,117622.42,0.5896061226444885,West
+Madhya Pradesh,M.P.Madhya Kshetra Vidyut Vitran Co.,77490.0,61634.0,65091.0,240.09,42821.99,0.7953800490385856,Central
+Madhya Pradesh,M.P.Paschim Kshetra Vidyut Vitran Co.,100911.0,69484.0,71125.0,255.31,48000.63,0.6885671532340379,Central
+Madhya Pradesh,M.P. Poorv Kshetra Vidyut Vitran Co,50973.0,38873.0,39158.0,141.41,27141.81,0.7626194259706119,Central
+Bihar,North Bihar Power Distribution Company Limited,79436.0,9645.0,9697.0,33.97,5997.1,0.12141850042801752,East
+Bihar,South Bihar Power Distribution Company Limited,43220.0,17433.0,18011.0,63.95,12034.78,0.40335492827394726,East
+__UNMAPPED__Dadra & Nagar haveli & Daman & Diu,Dadra Nagar Haveli Daman & Diu Power Distribution Corporation Ltd (A subsidiary of Torrent Power),3771.0,1467.0,1467.0,3.37,568.03,0.38902147971360385,Other
+Maharashtra,Adani Electricity Mumbai Limited,704.0,447.0,21706.0,11.04,1663.59,0.6349431818181818,West
+Maharashtra,Brihanmumbai Electric Supply & Transport (BEST),81.0,54.0,3264.0,1.41,194.27,0.6666666666666666,West
+Maharashtra,Maharashtra State Electricity Distribution Co. Ltd,1480759.0,745428.0,1113925.0,2716.82,531550.12,0.5034094001792324,West
+Maharashtra,NIDAR UTILITIES PANVEL LLP,4.0,3.0,396.0,0.26,33.24,0.75,West
+Maharashtra,Tata Power Co. Ltd,297.0,168.0,10306.0,4.75,711.71,0.5656565656565656,West
+Chhattisgarh,C S P D C L,194664.0,95251.0,97645.0,340.02,55425.59,0.48930978506554884,Central
+Chhattisgarh,TEED,69.0,48.0,48.0,0.21,31.2,0.6956521739130435,Central
+Jharkhand,Jharkhand Bijli Vitran Nigam Limited,9214.0,3543.0,3764.0,14.97,2322.61,0.3845235511178641,East
+Jharkhand,Tata Steel Limited,59.0,31.0,31.0,0.16,19.35,0.5254237288135594,East
+Jharkhand,TATA STEEL UTILITIES AND INFRASTRUCTURE SERVICES LIMITED,35.0,14.0,14.0,0.08,10.92,0.4,East
+West Bengal,CESC Limited,2459.0,1134.0,1197.0,3.96,712.63,0.46116307442049614,East
+West Bengal,India Power Corporation Limited (IPCL),7.0,3.0,3.0,0.01,1.54,0.42857142857142855,East
+West Bengal,WBSEDCL,46957.0,3655.0,8109.0,12.63,1014.95,0.07783717017697042,East
+Goa,Electricity Deptt. of Goa,4575.0,3556.0,4779.0,29.21,2429.64,0.7772677595628416,West
+Karnataka,Bangalore Electricity Supply Company Ltd. (BESCOM),33100.0,10459.0,22510.0,47.62,8036.11,0.3159818731117825,South
+Karnataka,"Chamundeshwari Electricity Supply Company Ltd. (CHESCOM),",4946.0,2762.0,3321.0,10.43,1853.63,0.5584310553983016,South
+Karnataka,Gulbarga Electricity Supply Company Ltd. (GESCOM),3369.0,1353.0,1353.0,5.3,910.16,0.40160284951024044,South
+Karnataka,HRECS Hukeri,43.0,6.0,6.0,0.02,0.78,0.13953488372093023,South
+Karnataka,Hubli Electricity Supply Company Ltd. (HESCOM),6575.0,3803.0,3887.0,13.76,2622.96,0.578403041825095,South
+Karnataka,Mangalore Electricity Supply Company Limited,8178.0,5671.0,6052.0,21.86,4000.89,0.6934458302763512,South
+Telangana,Northern Power Distribution Company of Telangana Limited,43401.0,28340.0,29138.0,96.69,15845.27,0.6529803460749752,South
+Telangana,Southern Power Distribution Company of Telangana Limited,43031.0,31280.0,46587.0,122.67,19138.94,0.7269178034440287,South
+Odisha,"TPCODL, TP Central Odisha Distribution Ltd.",103551.0,60076.0,61036.0,149.41,28535.39,0.5801585692074437,East
+Odisha,"TPNODL, TP Northern Odisha Distribution Limited",76738.0,46503.0,46521.0,100.4,18489.59,0.6059970288514165,East
+Odisha,"TPSODL, TP Southern Odisha Distribution Limited",54123.0,26051.0,26051.0,52.55,10105.71,0.48132956414093825,East
+Odisha,"TPWODL, TP Western Odisha Distribution Limited",79293.0,50942.0,51082.0,126.89,23577.63,0.6424526755199071,East
+Andhra Pradesh,Central Power Distribution Company of A.P. Ltd.,271894.0,89867.0,92315.0,272.36,49938.27,0.33052218879416245,South
+Andhra Pradesh,Eastern Power Distribution Company of A P Ltd,341116.0,130077.0,132507.0,403.04,70347.25,0.3813277594718512,South
+Andhra Pradesh,Kuppam,15012.0,1292.0,1292.0,2.89,48.55,0.08606448174793499,South
+Andhra Pradesh,Southern Power Distribution Company of AP Limited,306906.0,109612.0,109901.0,290.04,47163.46,0.3571517011723459,South
+Lakshadweep,Electricity Deptt. of Lakshadweep,1427.0,1244.0,1244.0,4.16,1009.01,0.8717589348283111,South
+Kerala,Kerala State Electricity Board,433725.0,328671.0,335307.0,1272.68,219541.58,0.757786615943282,South
+Kerala,Thrissur Corporation,983.0,829.0,1004.0,3.66,588.86,0.8433367243133265,South
+Puducherry,"Electricity Department, Puducherry",6857.0,5339.0,5410.0,19.15,3530.46,0.7786203879247484,South
+Tamil Nadu,Tamil Nadu Generation and Distribution Company Limited,107356.0,92186.0,107805.0,335.96,60368.83,0.8586944371995976,South
+Andaman and Nicobar Islands,Electricity Deptt. of Andaman & Nicobar Islands,671.0,444.0,463.0,1.45,292.19,0.6616989567809239,East
+Sikkim,"Energy & Power Department, Government of Sikkim",130.0,63.0,63.0,0.21,39.98,0.4846153846153846,North-East
+Assam,Assam Power Distribution Company Limited,391308.0,175146.0,175986.0,577.55,128027.33,0.44759115581587905,North-East
+Meghalaya,Meghalaya Power Distribution Corporation Ltd.,316.0,63.0,9308.0,0.2,33.35,0.19936708860759494,North-East
+Tripura,Tripura State Electricity Corporation Limited,7846.0,4938.0,4949.0,16.95,3534.89,0.6293652816721896,North-East
+Mizoram,"Power & Electricity Department, Government of Mizoram",1552.0,1442.0,1444.0,5.87,1125.22,0.9291237113402062,North-East
+Manipur,Manipur State Power Distribution Company Limited (MSPDCL),3491.0,1736.0,1736.0,6.65,1274.98,0.49727871670008594,North-East
+Nagaland,"Department of Power, Nagaland",847.0,488.0,488.0,1.63,360.63,0.5761511216056671,North-East
+Arunachal Pradesh,"Department of Power, Arunachal Pradesh",67.0,1.0,1.0,0.0,0.86,0.014925373134328358,North-East

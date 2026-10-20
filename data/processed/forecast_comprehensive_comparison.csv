@@ -1,0 +1,6 @@
+Model,MAE,RMSE,MAPE (%)
+Log-Linear (Exponential),94683.0,103572.0,4.67
+Holt's Exponential Smoothing,232568.0,298418.0,9.68
+Linear Trend,324563.0,376476.0,12.74
+"ARIMA(1,1,0)",534490.0,734870.0,19.3
+Naive Baseline,715610.0,873153.0,30.37
